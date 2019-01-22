@@ -1,0 +1,68 @@
+
+.container {
+    margin: 40px;
+}
+
+.modal-dialog {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 1;
+    position: fixed;
+    pointer-events: none;
+    background: rgba(21, 21, 21, 0.53);
+}
+
+.modal-dialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-dialog-content {
+    width: 600px;
+    color: black;
+    margin: 10% auto;
+    border-radius: 4px;
+    background: #fff;
+    position: relative;
+    padding: 20px;
+}
+
+/* Clode modal icon */
+.close {
+    color: #000;
+    text-decoration: none;
+}
+
+.close-modal {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Modal footer buttons */
+.modal-button {
+    border: none;
+    width: 150px;
+    margin: 0 5px;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.confirm {
+    background-color: #4CAF50;
+}
+
+.cancel {
+    background-color: #999;
+}
+
+.modal-dialog-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
